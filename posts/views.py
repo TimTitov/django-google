@@ -4,8 +4,9 @@ from django.shortcuts import render
 import json
 
 # Create your views here.
-#@login_required
-def test(request):
+
+@login_required
+def home(request):
     import pprint
     pprint.pprint(request.user)
-    return HttpResponse('zzzzzzzz')# + json.dumps((request.user)))
+    return HttpResponse('HOME')# + json.dumps((request.user)))

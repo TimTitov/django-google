@@ -6,6 +6,7 @@ import posts.views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', posts.views.home),
     path('accounts/', include('allauth.urls')),
   #  url(r'^accounts/', include('allauth.urls')),
    # path('', posts.views.test)
